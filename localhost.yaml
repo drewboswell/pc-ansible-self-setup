@@ -2,7 +2,7 @@
   connection: local
   become: true
   tasks:
-  - name: ["vim", "glances"]
+  - name: install packages
     apt:
       name:
         - sudo
