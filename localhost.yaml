@@ -2,7 +2,7 @@
   connection: local
   become: true
   tasks:
-  - name: install packages
+  - name: install packages base packages
     apt:
       name:
         - sudo
@@ -22,4 +22,5 @@
       update_cache: true
     tags: packages
   - debug:
-      msg: System asdasdasd
+      msg:
+        - System asdasdasd
