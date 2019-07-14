@@ -2,5 +2,22 @@
   connection: local
   become: true
   tasks:
-  - name: Install vim
-    apt: name=vim
+  - name: ["vim", "glances"]
+    apt:
+      name:
+        - sudo
+        - vim
+        - curl
+        - wget
+        - git-all
+        - build-essentials
+        - software-properties-common
+        - glances
+        - net-tools
+        - glances
+        - unzip
+        - tar
+        - ntp
+      state: latest
+      update_cache: true
+    tags: packages
