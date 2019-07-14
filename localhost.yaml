@@ -10,7 +10,7 @@
         - curl
         - wget
         - git-all
-        - build-essentials
+        - build-essential
         - software-properties-common
         - glances
         - net-tools
